@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Programação para Web</title>
+    <style>
+        p {
+            display: inline;
+            margin: 10px 0 0 0;
+        }
+
+        select {
+            display: block;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Test page for JavaScript training.</h1>
+    <button type="button" onclick="clicka()">Clique em mim!</button>
+    <button type="button" onclick="redirect()">Site da UEPB</button>
+    <p id="thanks"></p>
+    <br>
+
+    <p id="mouseover" onmouseover="switchText(this)" onmouseout="switchBack(this)">Passe o mouse aqui!</p>
+    <br>
+    <p id="mouseover2" onmouseover="switchText(this)" onmouseout="switchBack(this)">Passe o mouse aqui!</p>
+
+    <select onchange="getValue(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
     <script src="js/main.js"></script>
 </body>
 </html>
